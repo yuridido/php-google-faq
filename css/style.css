@@ -1,0 +1,24 @@
+/* GENERALE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* HEADER */
+header {
+    height: 50px;
+    color: #5f6368;
+    border-bottom: 0.3px solid rgba(0, 0, 0, 0.3);
+
+}
+
+h1 {
+    display: inline-block;
+    font-size: 20px;
+}
