@@ -59,14 +59,30 @@ $faq = [
                     <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="logo">
                 </div>
                 <h1>Privacy e termini</h1>
-
             </div>
-            <div class="bottom-head">
 
-            </div>
+            <ul class="bottom-head flex">
+                <li>Introduzione</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li class="active">Domande frequenti</li>
+            </ul>
 
         </header>
         <main>
+            <div class="container">
+                <ul id="elenco">
+                    <?php foreach ($faq as $key => $value) {
+                    ?>
+                    <li>
+                        <h2> <?php echo nl2br($value['domanda']); ?> </h2>
+                        <p> <?php echo nl2br($value['risposta']); ?> </p>
+                    </li>
+                    <?php } ?>
+                </ul>
+
+            </div>
 
         </main>
     </body>
