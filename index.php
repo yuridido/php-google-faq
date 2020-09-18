@@ -4,6 +4,7 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la
 visualizzazione di queste domande e risposte con PHP. -->
 
 <?php
+// creo l'array
 $faq = [
     [
         'domanda' =>  'Come state implementando la recente decisione della Corte di giustizia dell\'Unione europea (CGUE) relativa al diritto all\'oblio?',
@@ -73,7 +74,8 @@ $faq = [
         <main>
             <div class="container">
                 <ul id="elenco">
-                    <?php foreach ($faq as $key => $value) {
+                    <!-- lancio un foreach per la creazione delle domande dell'array faq -->
+                    <?php foreach ($faq as $value) {
                     ?>
                     <li>
                         <h2> <?php echo nl2br($value['domanda']); ?> </h2>
